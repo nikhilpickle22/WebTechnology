@@ -1,0 +1,11 @@
+body{
+    background-color:brown;
+}
+h1{
+    font-size: 40px;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+img{
+    border:solid green 4px;
+}
