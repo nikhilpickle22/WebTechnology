@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT Macro Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Cinzel:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="shadow">Cinematic Chronicles: Exploring Iconic Movies and Filmmaking Mastery</h1>
+        <hr>
+    </header>
+    <main>
+        <h2 class=>Movie Showcase</h2>
+        <div class="container">
+            <h3 class="movie-title">The Godfather (1972)</h3>
+            <h3 class="desc">  
+                Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge.
+            </h3>
+            <p class="about">
+                Francis Ford Coppola's <em>The Godfather</em> is renowned for its masterful use of chiaroscuro lighting, which creates dramatic shadows and highlights the moral complexities of the characters. The film's slow zoom-ins are a signature technique that intensify pivotal moments, particularly in scenes showcasing Michael Corleone’s transformation. Coppola’s wide framing in family gatherings underscores the Corleone family's influence and tradition, while the deliberate use of long takes adds a sense of realism and gravity to the storytelling.
+            </p>
+            <p class="quote">
+                “I'm gonna make him an offer he can't refuse.” — Don Vito Corleone
+            </p>
+            <img src="./poster/godfather.jpg" alt="Movie Poster" class="poster" data-audio="audio-godfather">
+        </div>
+        
+        <div class="container">
+            <h3 class="movie-title">Nayakan (1987)</h3>
+            <h3 class="desc">
+                Velu Naicker, who witnesses the brutal murder of his father, kills a corrupt policeman and escapes to Mumbai, only to become a gangster.
+            </h3>
+            <p class="about">
+                In <em>Nayakan</em>, Mani Ratnam employs <strong>dynamic camera angles</strong> and <strong>long takes</strong> to immerse viewers in the gritty world of the protagonist. The film’s use of <strong>handheld camerawork</strong> adds a sense of realism and urgency, particularly in intense action sequences. Ratnam also utilizes <strong>low-angle shots</strong> to emphasize the power and dominance of characters, while <strong>tight framing</strong> on faces captures the emotional depth of pivotal moments, enhancing the film’s dramatic impact.
+            </p>
+            <p class="quote">
+                “Neenga nallavara kettavara"
+            </p>
+            <img src="./poster/nayakan.jpg" alt="Movie Poster" class="poster" data-audio="audio-nayakan">
+        </div>
+        <audio id="audio-godfather" src="./audio/godfather-audio.mp3" preload="auto"></audio>
+        <audio id="audio-nayakan" src="./audio/nayakan-audio.mp3" preload="auto"></audio>
+    
+        <script>
+            document.addEventListener('DOMContentLoaded', () => {
+                const posters = document.querySelectorAll('.poster');
+    
+                posters.forEach(poster => {
+                    const audioId = poster.getAttribute('data-audio');
+                    const audio = document.getElementById(audioId);
+    
+                    poster.addEventListener('mouseover', () => {
+                        if (audio) {
+                            audio.play();
+                        }
+                    });
+    
+                    poster.addEventListener('mouseout', () => {
+                        if (audio) {
+                            audio.pause();
+                            audio.currentTime = 0;
+                        }
+                    });
+                });
+            });
+        </script>
+    </main>
+</body>
+</html>
