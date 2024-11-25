@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Validation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="main-content">
+        <h1>Let thy tickets be book..eth</h1>
+        <form onsubmit="return datavalidate()">
+            <p>Enter Name</p>
+            <input type="text" id="nameip" name="name" required>
+            
+            <p>Enter your preferred theatre:</p>
+            <select id="theatre" name="theatre" required>
+                <option value="-1" selected>[choose]</option>
+                <option value="1">Kamala Cinemas</option>
+                <option value="2">Sathyam Cinemas</option>
+                <option value="3">Kasi Talkies</option>
+                <option value="4">Pallazzo</option>
+                <option value="5">ESCAPE EA</option>
+            </select>
+            
+            <p>How many tickets do you want?</p>
+            <input type="number" id="count" name="count" min="1" required>
+            
+            <p>What movie do you want to see?</p>
+            <input type="text" id="movie" name="movie" required>
+            
+            <br><br>
+            <input class="button" type="submit" value="Book Tickets">
+        </form>
+    </div>
+</body>
+<script>
+    function datavalidate(){
+        var name = document.getElementById("nameip").value.trim();
+        var theatre = document.getElementById("theatre").value;
+        var count = document.getElementById("count").value;
+        var movie = document.getElementById("movie").value.trim();
+
+        if (name === "") {
+            alert("Please enter your name.");
+            return false;
+        }
+        
+        if (theatre === "-1") {
+            alert("Please select a theatre.");
+            return false;
+        }
+        
+        if (count <= 0 || count >= 300 ||isNaN(count)) {
+            alert("Please enter a valid number of tickets.");
+            return false;
+        }
+        
+        if (movie === "") {
+            alert("Please enter the movie you want to see.");
+            return false;
+        }
+
+        alert("Booking successful!");
+        return true;
+    }
+</script>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valorant Player Profile</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background-color: #121212;
+      color: #e4e4e4;
+    }
+    .card {
+      background-color: #1a1a1a;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+    .card-header {
+      background-color: #232323;
+      border-bottom: 1px solid #444;
+    }
+    .card-body {
+      padding: 2rem;
+    }
+    .btn-primary {
+      background-color: #fa2d2d;
+      border-color: #fa2d2d;
+    }
+    .btn-primary:hover {
+      background-color: #e02929;
+      border-color: #e02929;
+    }
+  </style>
+</head>
+<body>
+  <div class="container py-5">
+    <div class="row justify-content-center">
+      
+      <div class="col-md-8 col-lg-6">
+        <div class="card shadow-lg">
+          
+          <div class="card-header text-center">
+            <h2 class="text-white">MOVIE TIME</h2>
+          </div>
+
+        
+          <div class="card-body">
+            <div class="d-flex flex-column align-items-center mb-4">
+              <img src="data:image/webp;base64,UklGRsgSAABXRUJQVlA4ILwSAAAQTACdASq8AL4APrFMoEunJCMhqji7gOAWCU3bq7LVuU9K9uzfFjrw5lVjchf0vhz5RPm2hJlP7BtS/ur/jevL+779fk7qBey957AJ+i/3fztvsPNr7S+wB5Xd/bQF/N3/g9of/P8n/1j7CP7C+md7Dv279m/9lj9g/HHUn2Sg9RWVPgd2S926J5Mc7qExlWDUCtseSjLy4pplODdzHO4s09miFcf25NCrjOgaHpkbP4cNlVo2JBPBwAYixbhhe5kmlFxi82I36GlqBtCO73owv4dtT2XRQtCJ4GEShyE2h7RWbnc2TA8g5Pl2eN/HO33IvjA6qOFYHZnlJnm9iZ1dxZsFDMeWup8ieZ+RPc/HDDnZ+IQyr5MSBQaXQv+lNozSqZokuidlWax3cCRVhCHeaN96tThVbxtI2bc3Nu4QPuOWpogRUxxHW1N6sJ+PcOn0s7X9m4B/ZWyzmZ2xAZO/YjwZx5SdHPqZf5vbCo4GguyHFYgZNPHoMdAmd5UvhoCdiu9bzYIOKh06ZLBv1RydxPNurMs6beDQMJp7GNNaJ2Kb4kYgccJvOp3CWRiGlMjJX6CTXVKdYRcrQO/DkrRVYwoGiY33mp0k0Va28BxKp3ucruHHUE1AonsX2qFHRVLa+vCe8+vrzsYcrRHAWIw4/oOFdMrSq45tadQnVGs1yuq4UwGdQ6Ag/opf4n6rV7w+7pvdJ+Pa04VWY0UoY1OhTDtqnyx5LJZce5cvOGQxaeAVxag/SPoeGXTXtrpYnXMhtBQMuVztiCPDkBYjIubh++Tol6Lk9zwJ84Jamx/sf6NEmSSsdAVaAAD++hILVHT2eW5MprmvDU7jiUknStm4/wYye5kSIryM21Q24OQuowY99KBih4nIQOesWMiCdKGChYIMQ6yy2lMObgAiCrjQqbQk4YbCQhdgyNH3qFFipvxjfDOlmItI7ehqngYE9nQRIlN7y17qAjVirpfp6HblZZQ/dq0Lh3Bni4eexW19JWAKEBSw93hfqESg5giU6Sudt4y9wP2XjTZpbMb5CMVD/E3zqg7pnzMZftj1Wu9fY+GrXZc9FlJT36PZUBLpbeyO5u02QaOcNB8ubLFqq27xAnMK3XctuSAkNVlaFYWIDMl1skFSG/O3RGDmlt733bCUz8I3tNV9h/gUN7a4a50OHK9UwaP2fjBUANlevyd59U5vdyMawMfzt/7kQXkrrB99WoW6zI9e1RVpuqdrM2ksev6fBpoLgRjme17U17S5Y1dCKVkF0VIXCQUMhAfqcoUchgGQ+b7YhG285X50Ro/jPgYo/qnUQUSGgsAqvdpGDcV6eSbKc9E2s0dmBUFFBqWjmysyWBwQjqcL7gHQFDHdIIzEhCNkkSgMmkirCuvUSfX2ktKjo3ExJfqR8Cd0gkcU/kJb3sO5w8hTFjGOdNr7o48vdWA2UzHJcOWy10oHKZFaJ9gg1moUQQhHOOIYZSSBTxXySJ2b+WlvFPPTQMsb77wQI6inDb9jR1vVVOhp09jh0IeFKQ8V3OsdcP4m24BSbkAahaaKDFKXMcuLieLryVNpCmLB0hdP1i/WtFzpxnglSCMRh8xBnWgAaGSadUILq4MQNW/dGk6ym6JDusHFPBkYeUcyEZV5HTB/ACnzczhp95PxiClM6ENQNjAWHUZ6qe7T+KPCNeptroJx8dIqjmr21g+qnC/8mQM8NSH7uYTMNjnAt/+RSLYQz6/2zvLkPD2Y6GNSbMDsfmeS1tdFCq9wUHMC4bUshrdm45zEvpWwivEgnaPCZ1kGL3akBge1OPVM/H/y4vCgFi5TWDRstD1H+v9pKZG69A9Xhu+BymlXln3f9i74ohOH8RJvjvr4tLZ8pfrLKz6GtACJbE2XzxqUj0za/XNQk8SQDDllZX7kvmvEfdyxpRehhE5xZHWDyYWwtV7nZD0ibiWmYmVXLyMbcavuE17BRY9wtc0KneRoc4GnBnMnLUb5cipM/TH637Jbs9Nxfx9mRDoenTJ1fUwZMTD/04PY7vnvWgdRGLN5hqtafTAES1szNlxtwVq1WL7OiSd50iC/sx6PcXgO9uc/f8o2cEY/kVVPK4UphlaeN/IX/WmFSiiPKhh6bdCfCAjN4876/rQkYCtmlC36i7cvFHOwrq6KzqsNXb+meGkBGJdvxLN9/u23/oeki2Z1/iVJyvzKM6rBlAjXYNBbJ13KDk6AbozIVy/84rvcCQv68iCBQIA+Nuok1mOXamgT3vXBTALrIbjv8ZjC6pk8//+LUl6lMs4yuT4AWd3u8p0ZxsegBXElecwxtq2I4A0q7cCW7zsIV3HAzEwC2pBddpwjmCJRtBW2jM4ereMuSGgdgJ2GEIJ+hQ4SuVHEcUP7Lo3WUS0CVMQpzsoy1kUcRXKTE9YpwhMJQWsxDhaBzu8KUZmT4PLsAAgLnn6NT3Bzq43bIUDdu9DvyEpSZRyOIMmFPJbA7TnOByjTbch+/83ZEbM8JCx5mIErWi18SJDRWArhw/o8mdBbWT886cYuFDDL70quIQMAJAZRT2YHXKqOXAkOUs55Udv2U/HNQPcCCOJmrI6QEyFSi7a0TWz5Z4CPySf4YZM1tDHGz36r5UAVa/1eip65uyOWBxeAaUCaAfkspdiDVRcDCEBBxhK9JI6/tFNtjnibOMkDKbDBZl1z0km6E532cIvfhTS9JgOujVt8VLapGjsOdY0p8jMqd+mCFHju+tNs723eD9f6bT3h2P0UQF43CRjDqC22xUcAn6J5CGM2Wn21mlQBrztimyXRUgnUWxecaVnwfS1EQLKkhCnkQWBCOaMoRByW2/HBjO6JeYVu4nOy8gWxrAfj3DAA3iCgcWmAtJ4CsDSPpAB0JkOY1o/U2uvZtBcE4YAUMIxZqkIqewX27zH63ynpRtQkZBEH7loGQb7B7RTbGGIbdrOGyXflB9div79FLoOFbm/3zX7uXGF5ENz+BXdLvMKPE6++di8KvVVQLhqMP2tQPU7dq2xMFNm0WBD5P+cjmgEXO5Wm+KxVkEtJ2+5kx33r6mn1/486JxgiuPxpX+wybjPW8MY0BsoG1A6je6kHINyqyuwynPU5DjgBq6aVPveQocPOsN1ji7GiQHGKUOqIIGEY1iqHZaL2AQFDsB75ja8u2s8eQ8vxT1w1ZR5eOu222loaDcWfe3z7s70bm5lfUB/6uS3RhwnxtGCi9WUOWbcJ7fxxWlqor4q+lBEiR1zN89EB5ItZltO+p1jyrl1be6Wmmv4wbJ8Sl1Eq64fOkmKGCwsKgfm2o2hFKtTdsIkH+TuA9wczKreZwNpwAQGdC1Z4LLQk6nSl5u1M9buZxAHuBFAm/Ds6Io+uvyAAgIW8lNg4bWNiAFPHzpes5czkuXJ1VVgS7SrpG+cX0JA83ZNAYpEQnOY0tv1evBLjQETFG5TueFYvu/L4RbHIcsMyGrmWXeP42UqdEiCfpWqzdK4n1CqajAjjWr3U7gGRSG61AHsKcFMuJygCf06jojFocgg4x5IyR/vQO8LnzAH5khTGD36yeldHnFY6GITMZ0/lX8D1fXZb3jw9kkHhmZD5BZN0+ayLMCDc4LZjvROeXkULFpC99N3tkmkFYi/up5Sv0cl587jGuz36JiXHgQZLf1C7NGqzIWyteC6V+aPoLsJmqqKDXoqkxffyKcDJuMAkcZIcguuGJjHYddaYAkjMkwbA6jZ3ri4LFrzzXXdJfptN3jOMgDFWXV5FauSVMWsGYzgWnZpNU68XwHF/d350vAxAX2Gtzn1VmkVMqtm0hiT4ksgyCTYjUWMvlbJ2nBqSSOxQu1Lgti05I6pY2DWbYAIR0nimrfJmzs6oen5LNpOLfadrNBGQNBAb4aXi7gNutZnmV3GaGFoChlWskSKc3YHnbPZh+sc/AfJGQKZH4EvczrglIvMNVNwPJ2lljo4JUaUB2xjVPL7inzpLWEy+6l6my1YC+SfwjKLNCKlxJfzBgQItrvrSQaA6kBaIQIVKFlaoPhs6p/8lOrv303smfCfE8EiUm9svRVFu4TnY4s++v3CfRe3/4Ny8hDOZR4ocp+Nu0Jft7qRzixRLSbw0Il+1qFN0CPxmYsk6WbxRFij4yd6cJYYUWXJF/mJJpF4c9KarNIwc6T77tWju/ngI/3aypHifS7ANGivuyfXszQYW+9QAvFdWH+gBT1qVXbatVFC8zSXVxeyBonSgZRElXgP60kL1aFB8Q21sna7urdP4Q7McLfJOntkF9OlOcYh1F5XjDFMieNwmB8tO6wJyj2H5wM1EXdG09DcNK6ezjxt/wPfw7cUsv2mcrFTJHebl1lN0+vsRWGkO4winThsOF/UF7keucmrlqNywQlplcjjFTFZ01zL4eXiHIbYwGkw9mf+Za3LxNy0deoJNYPONl714o8H/M4wkVQqOlpXh3rUpQKrgXepBwKvgFo3r1gnXMeFvpvo3ZZArYBoPqi9L+E2I6p7XzUgT1ji/qW4EFt/pfOUTx/hu9zwY4Tn0UttYLdPGImZ5R8KXuIdIB+LKVTWh+ubUC7r6ddftHwg4O7l3Dqc+j0vfb9INkIJTys9EA89gswILJ5e1uvm9KItfhuhy+fcl8I9td1d/OxtGMWAaYtWyuk2fzHOQ6SHs+IIExYaGTRfNQbP6wdCBGwmoAjdlZY2IwarCnchc5jv9ZrT7tHzZzKkuZJh83IFFE98glxRvxGpV8ny+wEt2N4fbarDbq21Rlf7LpXwrDgvX6CtTt6JD2GK43S6qnugukA71qRDY5PcFnCF6FRJeay2l6K1dbc0jlhJL0lt4iygrOT+LIM9A9KOGmUXjrXREQCs1Xm2JHwBl++Jixnb71GajkbZHZLnqwYMJcC4pR+ybKldc14ODc2uAIEx5VvGsWb7308JZrOCoq6GxxOAnvVJjTdW8oWcKL4j8iZd4KNn2RCmB4ZIFdChJ7i/5pcr3gX80YrAL4idkng9NVyPdlCMOe8dSiszlRyGRmLDGvO/SrqJVqr0/Fvf2brC+SCImCR7v22nvhf9m4TZ3gG6KEyngTIrCbQFk4ckuANxzZtsm8vXJUG20+hI/rU0T84AJgB90vB4Agh3yDQhjgzKqUtq/OUx+KHNPCN/VUWsfVjkTI9ssssioBoewzCDtYD2UfbV3yvMdsPyb+HG+QxILH1gePKMbFxGKWPFUTngJdHfac1yYHnNiP+HRl7z21rtNw1FDSwx3+q8jwxvWYqLhWbTf8s9FzocnsOWwy+YMlZcSYTd251aw27XeYW/oMMZH/TzDsOyr46VLx7BPVwoNo7PGPpk8wOZo2LMCU/vcU5mC39X5Xp8HODwFMDRF3IXf1nm4SMo3zhihDgTQc6GMVb3PaxUOuwgLd/iL14FIO8iX64qddvwle4xW+mM/gw0gkduKuS2xay6vUDGygoWzaHospY0giei0bPP+HdJfsN6BX8nvhKPIn4e8/+w3UOw+aZTXW2hF9BEgq1As9+olz5VX3r40kKnOydCF6zLReVVEHD7Qob0iUcAg9KDVEWUAFC7SI/ybg290gaMtb9donFPv6ysz4l7hPOUAm2HZ+ZWGUUoq1OFxF/vDt8IMcGqQYzz59T9xQ2j72JJZ7WCIEfvQ+LuazWU/b4zP7NqODViLdf9FTwiSnlXnV/G7r3jOlcxM0++yxoKXH8cidAne/lacy6/pggbQzc4WjwL6KkbvOjPIfqr6NnsYQGGIIi9W1Fwbe/Si7Pl9/zZDm694gJzcr8htFpt01OK1YUQI4F6IMHZYOEH0yVK/x1X4mI++DfSVZ3ros0+enk6AMunxulKUByuhEElbl3yEjuYyiQ0Jca1cEdvAqwreDs5NncaW4oeQmfcyNuutKHTKxy7hgnyameqhzlkarNHBc/dbU1RkFG2nWL9EeIzghjKAuGanRWGcpgHrSjDAAIvZi6/0s+3CYReHrg+8qrf9/TT8XXS4wXMdqT1YKSJ1yns+9TrAPDgB/uf+iJAYWuu4PtcOS2vfCaKFUhoAMxsOladn5DFkBjkAycxn/4y12mdwGWKVykJU509aslc9vCpnR77aBJS3HHaDMyd/LmBp72LV7R9sjJ7yaJrEt06gwVH6X6Uqi8adXROg+ZWhXvggiLqFlPtTEKF4J7Nv24b3eWIFM6sHnnNiVn2pPUgSv1zsZFYSzVOE30wGy/0+iKHgRxI0YyrZ0Y7q52Yv2oBtITtPn0hsDtWD+0p7M3y9p71SnF0UMfGEoB2d05EUMcxlWM+wFKt2L5RkRH4ig/XkZQYEkwmc41ehbKg+yl6GUgTCbhFHbtfrXKhfWOd8qqNt7vqfFxTrhzWE0KQ44DvpHjPkcG4wwNPekBd0a5h03Ado9F/NqYz5WNfN/thtGHVXoKEFeRT2vzPJNETgAAAAAA==">
+              <h3 class="text-lg text-center text-white mt-3">The Godfather</h3>
+              <p class="text-sm mt-2">The Godfather is a 1972 American epic gangster film directed by Francis Ford Coppola</p>
+            </div>
+
+            <div class="mb-4">
+              <h4 class="text-primary">Details</h4>
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item bg-dark text-white border-0">Director: Francis Ford Coppola</li>
+                <li class="list-group-item bg-dark text-white border-0">Release Year: 1972</li>
+                <li class="list-group-item bg-dark text-white border-0">Genre: Crime Mafia</li>
+                <li class="list-group-item bg-dark text-white border-0">Related Films : Nayagan, Godfather II</li>
+              </ul>
+            </div>
+
+            <div class="text-center">
+              <a href="#" class="btn btn-primary">Watch Movie</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
