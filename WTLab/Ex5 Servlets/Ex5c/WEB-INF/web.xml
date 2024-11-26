@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" version="3.0">
+    <servlet>
+        <servlet-name>CookieServlet</servlet-name>
+        <servlet-class>CookieServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CookieServlet</servlet-name>
+        <url-pattern>/cookies</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HttpSessionServlet</servlet-name>
+        <servlet-class>HttpSessionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HttpSessionServlet</servlet-name>
+        <url-pattern>/httpsession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>URLRewritingServlet</servlet-name>
+        <servlet-class>URLRewritingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>URLRewritingServlet</servlet-name>
+        <url-pattern>/urlrewriting</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>HiddenFormServlet</servlet-name>
+        <servlet-class>HiddenFormServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HiddenFormServlet</servlet-name>
+        <url-pattern>/hiddenform</url-pattern>
+    </servlet-mapping>
+</web-app>
